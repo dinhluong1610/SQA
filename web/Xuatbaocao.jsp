@@ -12,15 +12,28 @@
         <title>Xuất báo cáo</title>
     </head>
     <body>
-        <form action="doXuatbaocao.jsp" method="post">
+        <form name="form1" onSubmit="actionOnSubmit()" method="post">
             
             <label for="bao cao">Chọn loại báo cáo:</label>
             <select name="bao cao" id="bao cao">
-            <option value="tien bao hiem ">Tiền BHXH chi trả 1 lần</option>
+                <option value="None">-- Loại báo cáo --</option>
+                <option value="doXuatbaocao.jsp ">Tiền BHXH chi trả 1 lần</option>
+                <option value="doXuatbaocao2.jsp ">Tiền BHXH khách hàng đã đóng</option>
             </select>
-        
-            <button type="submit" id="submit">Xuất báo cáo</button>
+            
+            <button type="submit">Xuất báo cáo</button>
         </form>
+            
+            <script>
+
+                function actionOnSubmit()
+                {
+                var e = document.getElementById("bao cao");
+                var baocao = e.options[e.selectedIndex].value;
+                document.form1.action = baocao;
+                }
+             </script>
                 
     </body>
+    
 </html
