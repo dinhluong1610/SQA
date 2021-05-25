@@ -10,7 +10,7 @@
     if (records > 0) {
 %>
 <script type="text/javascript">
-    alert("Sửa thành công");
+//    alert("Sửa thành công");
     window.location.replace("ListConfig.jsp");
 </script>
 <%

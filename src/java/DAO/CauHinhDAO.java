@@ -21,7 +21,7 @@ import model.Config;
 public class CauHinhDAO extends DAO{
     public ArrayList<Config> getConfigs() {
         ArrayList<Config> list=  null;
-        String sql = "select *from Config";
+        String sql = "select * from Config";
         CallableStatement cs;
         try {
             cs = conn.prepareCall(sql);
@@ -43,7 +43,7 @@ public class CauHinhDAO extends DAO{
     }
     public int DeleteConfig(int id) {
         int rowconut = 0;
-        String sql = "delete Config where ConfigID = ?";
+        String sql = "delete from Config where ConfigID = ?";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1, id);
@@ -56,7 +56,7 @@ public class CauHinhDAO extends DAO{
     }
     public int AddConfig(Config c) {
         int row = 0;
-        String sql = "INSERT INTO [dbo].[Config] ([ConfigName],[Coefficient]) "
+        String sql = "INSERT INTO Config(ConfigName,Coefficient) "
                 + "VALUES (? ,?)";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -71,7 +71,7 @@ public class CauHinhDAO extends DAO{
     }
     public int UpdateConfig(Config c) {
         int rowconut = 0;
-        String sql = "UPDATE [dbo].[Config] SET [ConfigName] = ? ,[Coefficient] = ? "
+        String sql = "UPDATE Config SET ConfigName= ? ,Coefficient = ? "
                 + "WHERE ConfigID = ?";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -88,7 +88,7 @@ public class CauHinhDAO extends DAO{
     
     public Config getConfigById( int id) {
          Config c = null;
-        String sql = "select *from Config where ConfigID = ?";
+        String sql = "select * from Config where ConfigID = ?";
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1, id);

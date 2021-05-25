@@ -36,7 +36,7 @@
                 <td><%= i++ %></td>
                 <td><%= c.getName() %></td>
                 <td><%= c.getId() %></td>
-                <td><a href="Details.jsp?id=<%= c.getId() %>">Chi tiết</a></td>
+                <td><a href="Details.jsp?id=<%= c.getId() %>" id= " <%=c.getId() %>" ">Chi tiết</a></td>
             </tr>
             <% } %>
             

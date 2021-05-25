@@ -25,7 +25,7 @@ public class BaocaoDAO extends DAO{
 "/(MONTH(EndDate)-MONTH(StartDate)+(YEAR(EndDate)-YEAR(StartDate))*12)		/*So thang dong bao hiem*/\n" +
 "*Coefficient																	/*He so*/			\n" +
 "*CEILING(((MONTH(EndDate)-MONTH(StartDate)+(YEAR(EndDate)-YEAR(StartDate))*12)/12)*2)/2 	/*So nam tinh bao hiem*/\n" +
-"), GETDATE()\n" +
+"), Curdate()\n" +
 "from Insurance,Config,Customer\n" +
 "where Customer.CustomerID=Insurance.CustomerID\n" +
 "and Config.ConfigID=Insurance.ConfigID\n" +

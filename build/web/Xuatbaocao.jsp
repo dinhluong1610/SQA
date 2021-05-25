@@ -19,7 +19,7 @@
             <option value="tien bao hiem ">Tiền BHXH chi trả 1 lần</option>
             </select>
         
-            <button type="submit">Xuất báo cáo</button>
+            <button type="submit" id="submit">Xuất báo cáo</button>
         </form>
                 
     </body>

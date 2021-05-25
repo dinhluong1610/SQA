@@ -18,6 +18,10 @@ public class Config implements Serializable {
     public Config() {
     }
 
+    public Config(String name, float hso) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     public String getName() {
         return name;
     }

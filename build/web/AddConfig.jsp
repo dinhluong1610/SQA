@@ -41,16 +41,16 @@
             <table>
                 <tr>
                     <td><b>Tên cấu hình:</b></td>
-                    <td><input type="text" name="txtname" /></td>
+                    <td><input id="tencauhinh" type="text" name="txtname" /></td>
                 </tr>
                 <tr>
                     <td><b>Hệ số nhân:</b></td>
-                    <td ><input type="text" name="txthso" /></td>
+                    <td ><input id="heso" type="text" name="txthso" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2" align = "center"> <input type="button" value="Thêm" onclick="Chẹck()" />
-                        <input type="reset" value="Tạo mới" />
-                        <a href="ListConfig.jsp"> <button>Quay lại</button></a> <br>
+                    <td colspan="2" align = "center"> <input id="them" type="button" value="Thêm" onclick="Chẹck()" />
+                        <input id="taomoi" type="reset" value="Tạo mới" />
+                        <a href="ListConfig.jsp" id="quaylai"> <button>Quay lại</button></a> <br>
                     </td>
                 </tr>
             </table>

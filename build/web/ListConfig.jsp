@@ -27,7 +27,7 @@
                     <form>
                         <table class="table table-hover hover-bordered">
                             <tr>
-                                <td colspan="4" align="right"> <a  href="AddConfig.jsp"><button  type="button" class='btn btn-success'>Thêm cấu hình</button></a></td>
+                                <td colspan="4" align="right"> <a  href="AddConfig.jsp"><button id="themcauhinh"  type="button" class='btn btn-success'>Thêm cấu hình</button></a></td>
                             </tr>
                             <tr>
                                 <th>ID</th>
@@ -40,7 +40,7 @@
                                 <td><%= i + 1%></td>
                                 <td><%=list.get(i).getName()%></td>
                                 <td><%=list.get(i).getHeso()%></td>
-                                <td><a href="UpdateConfig.jsp?id=<%= list.get(i).getId() %>"><button type="button" class='btn btn-warning'>Sửa</button></a></td>
+                                <td><a href="UpdateConfig.jsp?id=<%= list.get(i).getId() %>" id="<%= list.get(i).getId() %>"><button type="button" class='btn btn-warning'>Sửa</button></a></td>
                                 
                             </tr>
                             <% }%>

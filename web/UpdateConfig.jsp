@@ -59,7 +59,7 @@
                     <td><input type="text" id="hso" name="txthso" value="<%= config1.getHeso()%>" /></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><input type="button" value="Update" onclick="Chẹck()"></td>
+                    <td colspan="2"><input type="button" id="update" value="Update" onclick="Chẹck()"></td>
                 </tr>
             </table>
         </form>
